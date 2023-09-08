@@ -12,9 +12,9 @@ Charles Darwin theories about evolution revolutionized the field of biology and 
 
 In his most famous book, *On the origin of Species* from 1859, Darwin focuses on the struggle for existence, between and within species, and identifies natural selection and competition as the survival of the fittest. However, contrary to common belief, in that book he is not talking about human beings because Darwin cites a specific and diverse number of species, from plans to animals, to exemplify his ideas.
 
-This follows an unavoidable logic and is that his ideas showed that the human being is not a subject of any teleology, because he is not the culmination of evolution, he is simply an animal among the rest of the living beings of the planet. And this affirmation, totally broke with the entrenched ideas defended at the time, linked to the exceptionality of the human being among the rest of species. Therefore, it was not until 1871 that Darwin published "The Descent of Man", where he theorized and expounded ideas mentioning the human being specifically, altogether with other animals.
+This follows an unavoidable logic and is that his ideas showed that the human being is not a subject of any teleology, because he is not the culmination of evolution, he is simply an animal among the rest of the living beings of the planet. And this affirmation, totally broke with the entrenched ideas defended at the time, linked to the exceptionality of the human being among the rest of species. Therefore, it was not until 1871 that Darwin published *The Descent of Man*, where he theorized and expounded ideas mentioning the human being specifically, altogether with other animals.
 
-The "Descent of Man", is an often-overlooked book, where Darwin does focus on mankind. In fact, in the first two chapters he argues that human beings come from some lower form of life, something that he did not mention at all in his previous and most cited book. Besides, in this book he defends that cooperation often replaces competition in the face of natural selection, in multiple species, among which is the human being. And this last idea totally break with the main assumptions done by Social Darwinism.
+The *Descent of Man*, is an often-overlooked book, where Darwin does focus on mankind. In fact, in the first two chapters he argues that human beings come from some lower form of life, something that he did not mention at all in his previous and most cited book. Besides, in this book he defends that cooperation often replaces competition in the face of natural selection, in multiple species, among which is the human being. And this last idea totally break with the main assumptions done by Social Darwinism.
 
 Hence, my aim is to build a corpus with both book titles and apply text maning techniques in order to explore some hypothesis.
 
@@ -23,7 +23,7 @@ Hence, my aim is to build a corpus with both book titles and apply text maning t
 First, as Darwin revolutionary idea in the field of biology and evolutionary biology was that evolution take place at the species level, my hypothesis is 
 that the term species is going to be mentioned a lot of times, but the term evolution not at all, because as far as i know in the mid-19th century, when Darwin was writing, the word "evolution" had different connotations  than it 
 does today, because at that time, the term was often associated with the idea of a linear, progressive development of life forms, whereas Darwin's theory 
-proposed a more complex, branching pattern of descent, as his famous *Tree of life* sketched in his notes shows
+proposed a more complex, branching pattern of descent, as his famous *Tree of Life* sketched in his notes shows
 
 <div style="text-align:center">
   <img src="../images/lifetree.png" />
@@ -31,11 +31,11 @@ proposed a more complex, branching pattern of descent, as his famous *Tree of li
   Reference: https://museoecologiahumana.org/piezas/el-cuaderno-b-de-darwin-y-el-coral-de-la-vida/
 </div>
 
-Secondly, as the subtitle of *The descent of men, and selection in relation to sex* shows, my hypothesis is that in this book Charles Darwin focuses more on "sexual selection" and that *On the origin of species* he focuses more on "natural selection", therefore reading both books is needed to understand Darwin theory of evolution influence in actual evolution theories, because distinctive deaths (natural selection) and distinctive births (sexual selection) are the engines of evolution. 
+Secondly, as the subtitle of *The descent of man, and selection in relation to sex* shows, my hypothesis is that in this book Charles Darwin focuses more on "sexual selection" and that *On the origin of species* he focuses more on "natural selection", therefore reading both books is needed to understand Darwin theory of evolution influence in actual evolution theories, because distinctive deaths (natural selection) and distinctive births (sexual selection) are the engines of evolution. 
 
-Moreover, as was explained in the introduction, in his first and most famous book *On the origin of species*, Darwin does not mention humans, due to the teleological ideas surrounding humans at the time, but in the second one, *The descent of men*, he does mention humans. Hence, another hypothesis is that *On the origin of species* is a book about animal and plants biology in general, while *The descent of men* is going to be more focused on human biology.
+Moreover, as was explained in the introduction, in his first and most famous book *On the origin of species*, Darwin does not mention humans, due to the teleological ideas surrounding humans at the time, but in the second one, *The descent of man*, he does mention humans. Hence, another hypothesis is that *On the origin of species* is a book about animal and plants biology in general, while *The descent of man* is going to be more focused on human biology.
 
-In forth place, competition among and with-in species and mutual aid with-in species are two factors of evolution in any species, but my hypothesis is that *On the origin of species* competition is going to be more present than aid because this book focuses on the struggle for life and on natural selection, while *The descent of men* defends that cooperation is an important factor of evolution among human beings and other animals, therefore the word aid is going to be more used than the word competition, which will highlight the fact that Social Darwinism is based on a biased reading of Darwin and on a misinterpretation of his theories.
+In forth place, competition among and with-in species and mutual aid with-in species are two factors of evolution in any species, but my hypothesis is that *On the origin of species* competition is going to be more present than aid because this book focuses on the struggle for life and on natural selection, while *The descent of man* defends that cooperation is an important factor of evolution among human beings and other animals, therefore the word aid is going to be more used than the word competition, which will highlight the fact that Social Darwinism is based on a biased reading of Darwin and on a misinterpretation of his theories.
 
 # Libraries
 
@@ -241,7 +241,7 @@ frequency
 
 As the table above shows, using frequency of words and using word counts, gives 
 pretty similar results when it comes to know which are the most used words, even
-though *On the origin of species* has 10000 words more than *The descent of men*.
+though *On the origin of species* has 10000 words more than *The descent of man*.
 
 ## Visualizing words of interest frequency in both books 
 
@@ -574,7 +574,7 @@ bigrams_filtered %>%
   filter(word2 == "sapiens") %>%
   count(title, word1, word2, sort = TRUE)
 ```
-The term does not appear even once, which surprised me because I thought it would not be present *On the origing of species* but it would be present in *The descent of men*. Therefore, I checked the word in Google Books Ngram viewer and realized that the term was not popularized in scientific literature till 1900´s, which may be an indicator of how long in has taken to break the teleology surrounding human beings, because till that date, humankind was not named with the binomial nomenclature for species, as the rest of the living beings in this planet.
+The term does not appear even once, which surprised me because I thought it would not be present *On the origing of species* but it would be present in *The descent of man*. Therefore, I checked the word in Google Books Ngram viewer and realized that the term was not popularized in scientific literature till 1900´s, which may be an indicator of how long in has taken to break the teleology surrounding human beings, because till that date, humankind was not named with the binomial nomenclature for species, as the rest of the living beings in this planet.
   
 ![](../images/homosapiens.png)
 
@@ -619,7 +619,7 @@ The term does not appear even once, which surprised me because I thought it woul
   count(title, word1, word2, sort = TRUE)
 ```
 
-There is many bigrams with those four words, but the interesting thing is that most of those bigrams are from *The descent of men* because it is a book that centers on sexual selection and sexual selection is needed a male and a female. Furthermore, the most repeated word altogether with these four is adult, because only among adults of any species, sexual selection takes place.
+There is many bigrams with those four words, but the interesting thing is that most of those bigrams are from *The descent of man* because it is a book that centers on sexual selection and sexual selection is needed a male and a female. Furthermore, the most repeated word altogether with these four is adult, because only among adults of any species, sexual selection takes place.
 
 ### Distinctive bigrams with TF-IDF
 
@@ -657,11 +657,11 @@ Moreover, when it comes to *On the origin of species*, the distinctive bigrams a
 
 My first hypothesis about the word "species" seems to be true because in both books is one of the most mentioned words, and as bigrams showed, it is used with a varied number of adjectives. On top of that,the word "evolution" is present in his works but it is not a remarkable word, therefore my findings agree with my first hypothesis 
 
-My second hypothesis also seems to be true, because as distinctiveness analysis in words and bigrams have shown, altogether with word counts and word proportions, *On the origin of species* is more focused on natural selection and *The descent of men* focuses on sexual selection.
+My second hypothesis also seems to be true, because as distinctiveness analysis in words and bigrams have shown, altogether with word counts and word proportions, *On the origin of species* is more focused on natural selection and *The descent of man* focuses on sexual selection.
 
-In third place, it seems not to be true that *The descent of men* focuses concretely on humans, because it talks about sexual selection in humans and animals. However, in is true that *On the origin of species* focuses on biology of plants and animals in general.
+In third place, it seems not to be true that *The descent of man* focuses concretely on humans, because it talks about sexual selection in humans and animals. However, in is true that *On the origin of species* focuses on biology of plants and animals in general.
 
-Moreover, is was true that competition and aid are words used in both books, because both concepts are factors of evolution, but as my forth hypothesis defended, and as word count and word proportion have shown, competition is more used *On the origin of species* and "aid" is more present in *The descent of men*. A fact that highlights that Social Darwinism is based on a biased reading of Darwin and on a misinterpretation of his theories.
+Moreover, is was true that competition and aid are words used in both books, because both concepts are factors of evolution, but as my forth hypothesis defended, and as word count and word proportion have shown, competition is more used *On the origin of species* and "aid" is more present in *The descent of man*. A fact that highlights that Social Darwinism is based on a biased reading of Darwin and on a misinterpretation of his theories.
 
 Finally, other interesting findings have been realizing that *Homo sapiens* was
 a concept not used at all by Charles Darwin, and also realizing the importance birds have in his theories and works. And it is not only that finches have a lot of relevance when in comes to Darwin´s first hypothesis about evolution, it is also related to the fact that birds and their sexual selection have a strong presence in his works.
